@@ -311,7 +311,7 @@ class _SellingPageState extends State<SellingPage>
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       SizedBox(
-                        width: we * 0.03,
+                        width: we * 0.05,
                       ),
                       FadeIn(
                         delay: const Duration(milliseconds: 2500),
@@ -390,59 +390,62 @@ class _SellingPageState extends State<SellingPage>
                       ),
                     ],
                   ),
-                  SizedBox(height: he * 0.025),
-                  Row(
-                    children: [
-                      SizedBox(
-                        width: we * 0.04,
-                      ),
-                      FadeIn(
-                        delay: const Duration(milliseconds: 3000),
-                        child: Container(
-                          width: 60,
-                          height: 60,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                  width: 2,
-                                  color: Colors.grey.withOpacity(0.2))),
-                          child: const Icon(
-                            Icons.shopping_bag_outlined,
-                            color: Colors.grey,
+                  Expanded(child: SizedBox(height: he * 0.04)),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: we * 0.04,
+                        ),
+                        FadeIn(
+                          delay: const Duration(milliseconds: 3000),
+                          child: Container(
+                            width: 60,
+                            height: 60,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                    width: 2,
+                                    color: Colors.grey.withOpacity(0.2))),
+                            child: const Icon(
+                              Icons.shopping_bag_outlined,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        width: we * 0.04,
-                      ),
-                      FadeIn(
-                        delay: const Duration(milliseconds: 3200),
-                        child: ElevatedButton(
-                            onPressed: () {
-                              Navigator.of(context).pushReplacement(
-                                  PageTransition(
-                                      child: const Paymentpage(),
-                                      type: PageTransitionType.fade));
-                            },
-                            style: ElevatedButton.styleFrom(
-                                primary: const Color(0xFFD59B6B),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(30)),
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 22, horizontal: 110)),
-                            child: FadeIn(
-                              delay: const Duration(milliseconds: 3500),
-                              child: const Text(
-                                "Buy now",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold,
+                        SizedBox(
+                          width: we * 0.04,
+                        ),
+                        FadeIn(
+                          delay: const Duration(milliseconds: 3200),
+                          child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.of(context).pushReplacement(
+                                    PageTransition(
+                                        child: const Paymentpage(),
+                                        type: PageTransitionType.fade));
+                              },
+                              style: ElevatedButton.styleFrom(
+                                  primary: const Color(0xFFD59B6B),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30)),
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 22, horizontal: 110)),
+                              child: FadeIn(
+                                delay: const Duration(milliseconds: 3500),
+                                child: const Text(
+                                  "Buy now",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
-                            )),
-                      )
-                    ],
+                              )),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),

@@ -1,5 +1,4 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
@@ -68,8 +67,10 @@ class _PaymentpageState extends State<Paymentpage>
                 child: const Text(
                     '         Thank you you ❤️\nget two start for your order'),
               ),
-              SizedBox(
-                height: he * 0.35,
+              Expanded(
+                child: SizedBox(
+                  height: he * 0.35,
+                ),
               ),
               FadeIn(
                   delay: const Duration(milliseconds: 1000),
@@ -82,7 +83,7 @@ class _PaymentpageState extends State<Paymentpage>
                                 type: PageTransitionType.fade));
                       },
                       style: ElevatedButton.styleFrom(
-                          primary: const Color.fromRGBO(79, 229, 129, 1),
+                          primary: const Color(0xFF4FE581),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30)),
                           padding: const EdgeInsets.symmetric(

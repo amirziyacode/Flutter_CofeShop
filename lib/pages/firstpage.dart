@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: he * 0.01,
           ),
           Positioned(
-            left: 60,
+            left: we * 0.12,
             top: he * 0.89,
             child: ElevatedButton(
                 onPressed: () {
@@ -80,8 +80,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 style: ElevatedButton.styleFrom(
                     primary: Colors.orangeAccent,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 100, vertical: 25),
+                    padding:  EdgeInsets.symmetric(
+                        horizontal: we * 0.3, vertical: 25),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(40))),
                 child: const Text("Get Started",
