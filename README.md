@@ -27,11 +27,12 @@ Ios ✔️
 
 
 
+
 ### ✌&ensp;Preview
 
 |               Preview                |                 App                  |
 | :----------------------------------: | :----------------------------------: |
-| ![d](https://s6.uupload.ir/files/ezgif.com-gif-maker_cqmr.gif) | ![w](https://s6.uupload.ir/files/coffee_image_y1r7.png) |
+| ![ezgif com-gif-maker](https://user-images.githubusercontent.com/75315732/166823568-14decf33-2d92-40ae-8951-e7cc42e5da28.gif) | ![w](https://s6.uupload.ir/files/coffee_image_y1r7.png) |
 
 
 ## Development Setup
