@@ -74,31 +74,34 @@ class _PaymentpageState extends State<Paymentpage>
               ),
               FadeIn(
                   delay: const Duration(milliseconds: 1000),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            PageTransition(
-                                child: const CoffeePage(),
-                                type: PageTransitionType.fade));
-                      },
-                      style: ElevatedButton.styleFrom(
-                          primary: const Color(0xFF4FE581),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30)),
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 25, horizontal: 150)),
-                      child: FadeIn(
-                        delay: const Duration(milliseconds: 1200),
-                        child: const Text(
-                          "BACK :)",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
+                  child: Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              PageTransition(
+                                  child: const CoffeePage(),
+                                  type: PageTransitionType.fade));
+                        },
+                        style: ElevatedButton.styleFrom(
+                            primary: const Color(0xFF4FE581),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30)),
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 25, horizontal: 150)),
+                        child: FadeIn(
+                          delay: const Duration(milliseconds: 1200),
+                          child: const Text(
+                            "BACK :)",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                      )))
+                        )),
+                  ))
             ],
           ),
         ),

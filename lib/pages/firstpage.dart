@@ -27,6 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fit: BoxFit.cover)),
         child: Stack(alignment: Alignment.center, children: [
           TransformerPageView(
+            physics: const BouncingScrollPhysics(),
               transformer: ScaleAndFadeTransformer(),
               pageController: controller,
               itemBuilder: (c, index) {

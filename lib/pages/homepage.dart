@@ -172,52 +172,50 @@ class _CoffeePageState extends State<CoffeePage>
                   child: ListView.builder(
                     physics: const BouncingScrollPhysics(),
                     itemBuilder: (c, i) {
-                      return Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
-                          child: InkWell(
-                            onTap: () {
-                              setState(() {
-                                icon = coffess[i].icocImage.toString();
-                              });
-                            },
-                            child: Container(
-                              width:
-                                  coffess[i].icocImage.length == 31 ? 180 : 140,
-                              height: 78,
-                              alignment: Alignment.center,
-                              decoration: BoxDecoration(
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 8.0),
+                        child: InkWell(
+                          onTap: () {
+                            setState(() {
+                              icon = coffess[i].icocImage.toString();
+                            });
+                          },
+                          child: Container(
+                            width:
+                                coffess[i].icocImage.length == 31 ? 180 : 140,
+                            height: 78,
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                                color: icon == coffess[i].icocImage
+                                    ? const Color(0xFFD59B6B)
+                                    : Colors.grey.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(30)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                SizedBox(
+                                    width: coffess[i].icocImage.length == 31
+                                        ? 31
+                                        : 20),
+                                Image.asset(
+                                  coffess[i].icocImage,
                                   color: icon == coffess[i].icocImage
-                                      ? const Color(0xFFD59B6B)
-                                      : Colors.grey.withOpacity(0.1),
-                                  borderRadius: BorderRadius.circular(30)),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  SizedBox(
-                                      width: coffess[i].icocImage.length == 31
-                                          ? 31
-                                          : 20),
-                                  Image.asset(
-                                    coffess[i].icocImage,
-                                    color: icon == coffess[i].icocImage
-                                        ? Colors.white
-                                        : Colors.black,
-                                    width: 30,
-                                    height: 30,
+                                      ? Colors.white
+                                      : Colors.black,
+                                  width: 30,
+                                  height: 30,
+                                ),
+                                SizedBox(width: we * 0.02),
+                                Expanded(
+                                  child: Text(
+                                    coffess[i].title,
+                                    style: TextStyle(
+                                        color: icon == coffess[i].icocImage
+                                            ? Colors.white
+                                            : Colors.black),
                                   ),
-                                  SizedBox(width: we * 0.02),
-                                  Expanded(
-                                    child: Text(
-                                      coffess[i].title,
-                                      style: TextStyle(
-                                          color: icon == coffess[i].icocImage
-                                              ? Colors.white
-                                              : Colors.black),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -350,7 +348,7 @@ class _CoffeePageState extends State<CoffeePage>
                                                 color: Colors.white),
                                           ),
                                           Expanded(
-                                            flex : 1,
+                                              flex: 1,
                                               child:
                                                   SizedBox(width: we * 0.28)),
                                           GestureDetector(
