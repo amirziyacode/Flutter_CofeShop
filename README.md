@@ -29,9 +29,9 @@ Ios ✔️
 
 ### ✌&ensp;Preview
 
-|               DarkMode               |              LightMode               |
+|               Preview                |                 App                  |
 | :----------------------------------: | :----------------------------------: |
-| ![d](https://s6.uupload.ir/files/dark_eeko.gif) | ![w](https://s6.uupload.ir/files/coffee_image_y1r7.png) |
+| ![d](https://s6.uupload.ir/files/ezgif.com-gif-maker_cqmr.gif) | ![w](https://s6.uupload.ir/files/coffee_image_y1r7.png) |
 
 
 ## Development Setup
