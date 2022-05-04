@@ -11,7 +11,7 @@ A new Flutter project.
 
 |               DarkMode               |              LightMode               |
 | :----------------------------------: | :----------------------------------: |
-| ![d](https://s6.uupload.ir/files/dark_eeko.gif) | ![w](https://uupload.ir/view/coffee_dcw8.mov/) |
+| ![d](https://s6.uupload.ir/files/dark_eeko.gif) | ![w](https://s6.uupload.ir/files/coffee_image_y1r7.png) |
 
 
 ## Development Setup
