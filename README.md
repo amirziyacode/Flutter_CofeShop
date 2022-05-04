@@ -4,7 +4,27 @@
 
 # Flutter_Coffee
 
-A new Flutter project.
+A new Flutter Challenge.
+
+Coffee App Ui ☕
+
+I hope you can use it in your daily work 😅
+
+ Rate me ⭐
+
+Thank you ☺
+
+
+
+## Platform
+
+Android ✔️
+
+Ios ✔️
+
+
+
+
 
 
 ### ✌&ensp;Preview
