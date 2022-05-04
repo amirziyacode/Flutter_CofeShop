@@ -1,6 +1,25 @@
+![Coffee](https://www.tastingtable.com/img/gallery/coffee-brands-ranked-from-worst-to-best/l-intro-1645231221.jpg)
+[![GitHub stars](https://img.shields.io/github/stars/iampawan/FlutterExampleApps.svg?style=social&label=Star)](https://github.com/amirziyacode)
+[![GitHub forks](https://img.shields.io/github/forks/iampawan/FlutterExampleApps.svg?style=social&label=Fork)](https://github.com/amirziyacode?tab=repositories)
+
 # Flutter_Coffee
 
 A new Flutter project.
+
+
+### ✌&ensp;Preview
+
+|               DarkMode               |              LightMode               |
+| :----------------------------------: | :----------------------------------: |
+| ![d](https://s6.uupload.ir/files/dark_eeko.gif) | ![w](https://s6.uupload.ir/files/white_nl38.gif) |
+
+
+## Development Setup
+Clone the repository and run the following commands:
+```
+flutter pub get
+flutter run
+```
 
 ## Getting Started
 
